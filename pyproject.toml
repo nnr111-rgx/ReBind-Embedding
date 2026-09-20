@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rebind"
+version = "0.1.0"
+description = "Reconstruction-aware edit-distance embedding for binary sequences"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.1",
+  "h5py>=3.9",
+  "scipy>=1.10",
+  "rapidfuzz>=3.6",
+  "pandas>=2.0",
+  "matplotlib>=3.7"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
