@@ -5,16 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rebind4ary"
 version = "0.2.0"
-description = "Isolated 4-ary ReBind IDS setup and BCJR-distilled V2 experiments"
+description = "4-ary IDS fine-tuning for pretrained REBIND embeddings"
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.24",
-  "torch>=2.0",
-  "h5py>=3.8",
+  "torch>=2.1",
+  "h5py>=3.9",
   "pandas>=2.0",
-  "matplotlib>=3.7",
-  "tqdm>=4.65",
-  "rapidfuzz>=3.0"
+  "matplotlib>=3.7"
 ]
 
 [tool.setuptools.packages.find]
